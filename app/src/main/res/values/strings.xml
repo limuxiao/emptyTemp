@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- app名称 -->
+    <string name="app_name">EmptyTemp</string>
+
+    <!-- 底部tab 名称 -->
+    <string name="tab_home">首页</string>
+    <string name="tab_recommend">推荐</string>
+    <string name="tab_cart">购物车</string>
+    <string name="tab_my">我的</string>
+
+
+    <!-- -->
+    <string name="top_title">标题</string>
+</resources>

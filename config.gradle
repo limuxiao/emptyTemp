@@ -1,0 +1,139 @@
+ext {
+    As = [
+            // app 编译版本
+            compileSdkVersion: 29,
+
+            // 编译工具版本
+            buildToolsVersion: '29.0.2',
+
+            // app id
+            applicationId    : "com.temp",
+
+            // 最小支持版本
+            minSdkVersion    : 16,
+
+            // 编译目标版本
+            targetSdkVersion : 29,
+
+            // 版本序列号
+            versionCode      : 1,
+
+            // 版本号
+            versionName      : "1.0.1",
+
+            sourceCompatibility:  JavaVersion.VERSION_1_8
+    ]
+
+    Vs = [
+            // glide 图片加载框架
+            Glide: '4.11.0',
+
+            // 封装baseAdapter
+            AdapterHelper: '3.0.6',
+
+            // 网略请求框架
+            OKHttp: '4.9.0',
+            Retrofit2: '2.9.0',
+
+            // sqlite数据库框架
+            Greendao: '3.2.2',
+
+            // rxandroid
+            RXAndroid: '3.0.0',
+            // rxjava
+            RXJava: '3.0.0',
+
+            // gson
+            Gson: '2.8.6'
+    ]
+
+    Dp = [
+
+            // rxandroid
+            RXAndroid:  "io.reactivex.rxjava3:rxandroid:$Vs.RXAndroid",
+
+            // rxjava
+            RXJava: "io.reactivex.rxjava3:rxjava:$Vs.RXJava",
+
+            // glide 图片加载框架
+            Glide                 : "com.github.bumptech.glide:glide:$Vs.Glide",
+            GlideCompiler         : "com.github.bumptech.glide:compiler:$Vs.Glide",
+
+            // 网略请求框架 okhttp retrofit
+            OKHttp                : "com.squareup.okhttp3:okhttp:$Vs.OKHttp",
+            Retrofit2             : "com.squareup.retrofit2:retrofit:$Vs.Retrofit2",
+
+            // 数据库
+            Greendao              : "org.greenrobot:greendao:$Vs.Greendao",
+
+            // Gson
+            Gson                  : "com.google.code.gson:gson:$Vs.Gson",
+            // 数据库可视化工具 可以在线查看数据库
+//            DebugDbEncrypt        : "com.amitshekhar.android:debug-db-encrypt:$Vs.DebugDbEncrypt",
+
+            // AgentWeb:https://github.com/Justson/AgentWeb 一款webView封装框架
+//            Agentweb              : "com.just.agentweb:agentweb:$Vs.Agentweb",
+
+            // 跑马灯 :https://github.com/sunfusheng/MarqueeView
+//            Marqueeview           : "com.sunfusheng:marqueeview:$Vs.Marqueeview",
+
+            // BaseRecyclerViewAdapterHelper:https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+            // 封装baseAdapter 可实现不同的功能 具体查看应用Veiw ->RecyclerView
+//            AdapterHelper         : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$Vs.AdapterHelper",
+
+            // LeakCanary：https://github.com/square/leakcanary 检测内存泄露工具
+//            Leakcanary            : "com.squareup.leakcanary:leakcanary-android:$Vs.Leakcanary",
+
+            // BottomNavigationBar底部导航栏
+            NavigationBar         : "com.ashokvarma.android:bottom-navigation-bar:$Vs.NavigationBar",
+
+            // MagicIndicator 指示器
+//            MagicIndicator        : "com.github.hackware1993:MagicIndicator:$Vs.MagicIndicator",
+
+            // Fastjson:https://github.com/alibaba/fastjson
+//            Fastjson              : "com.alibaba:fastjson:$Vs.Fastjson",
+
+            // banner:https://github.com/youth5201314/banner 轮播图
+//            Banner                : "com.youth.banner:banner:$Vs.Banner",
+
+            // svg:https://www.jianshu.com/p/64e9598806cb
+//            Androidsvg            : "com.caverock:androidsvg-aar:$Vs.Androidsvg",
+
+
+
+            // retrofit添加Json解析返回数据
+//            Retrofit2ConverterGson: "com.squareup.retrofit2:converter-gson:$Vs.Retrofit2",
+
+            // retrofit添加Rxjava支持
+//            Retrofit2Rxjava2      : "com.squareup.retrofit2:adapter-rxjava2:$Vs.Retrofit2Rxjava2",
+//            LifecycleViewModel    : "android.arch.lifecycle:extensions:$Vs.lifeViewModel",
+
+            // rxlifecycle框架 管理生命周期
+            Rxlifecycle           : "com.trello.rxlifecycle2:rxlifecycle-components:$Vs.Rxlifecycle",
+
+            // PickerView https://github.com/Bigkoo/Android-PickerView 选择器弹窗
+//            PickerView            : "com.contrarywind:Android-PickerView:$Vs.PickerView",
+
+            // 开源数据库
+//            Litepal               : "org.litepal.android:java:$Vs.Litepal",
+
+            // 腾讯开源UI库 https://qmuiteam.com/android/get-started/
+//            Qmui                  : "com.qmuiteam:qmui:$Vs.Qmui",
+
+            // MPAndroid图表库 https://github.com/PhilJay/MPAndroidChart
+//            MPAndroidChart        : "com.github.PhilJay:MPAndroidChart:$Vs.MPAndroidChart",
+
+            // 二维码相关功能 https://github.com/yuzhiqiang1993/zxing
+//            Zxing                 : "com.github.yuzhiqiang1993:zxing:$Vs.Zxing",
+//            room                  : "android.arch.persistence.room:compiler:$Vs.lifeViewModel",
+
+            //navigation
+//            navigation            : "android.arch.navigation:navigation-fragment:$Vs.navigation",
+//            navigationUI          : "android.arch.navigation:navigation-ui:$Vs.navigation",
+
+            //paging
+//            paging                : "android.arch.paging:runtime:$Vs.paging",
+            //paging
+//            workManager           : "android.arch.work:work-runtime:$Vs.workManager"
+    ]
+}

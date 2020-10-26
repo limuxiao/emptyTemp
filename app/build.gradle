@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion   As.compileSdkVersion
+    buildToolsVersion   As.buildToolsVersion
+    defaultConfig {
+        applicationId "lmx.temp"
+        minSdkVersion As.minSdkVersion
+        targetSdkVersion As.targetSdkVersion
+        versionCode As.versionCode
+        versionName As.versionName
+        multiDexEnabled true
+    }
+
+    android {
+        dataBinding {
+            enabled = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility As.sourceCompatibility
+        targetCompatibility As.sourceCompatibility
+    }
+}
+
+greendao {
+    schemaVersion 1 //当前数据库版本
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // androidx
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    // okhttp
+    implementation Dp.OKHttp
+
+    // retrofit
+    implementation Dp.Retrofit2
+
+    // glide
+    implementation Dp.Glide
+    annotationProcessor Dp.GlideCompiler
+
+    // Greendao
+    implementation Dp.Greendao // add library
+
+    // RXAndroid
+    implementation Dp.RXAndroid
+    implementation Dp.RXJava
+
+    // Gson
+    implementation Dp.Gson
+
+
+}

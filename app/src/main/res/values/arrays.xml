@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--菜单栏-->
+    <string-array name="bottom_menu_title">
+        <item>@string/tab_home</item>
+        <item>@string/tab_recommend</item>
+        <item>@string/tab_cart</item>
+        <item>@string/tab_my</item>
+    </string-array>
+
+    <string-array name="bottom_menu_icon">
+        <item>@mipmap/icon_home</item>
+        <item>@mipmap/icon_recommend</item>
+        <item>@mipmap/icon_cart</item>
+        <item>@mipmap/icon_my</item>
+    </string-array>
+
+
+
+</resources>

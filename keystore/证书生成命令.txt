@@ -1,0 +1,1 @@
+keytool -genkey -v -alias goldApp -keyalg RSA -keysize 1024 -keypass 123456 -dname "cn=duan,ou=gold company,o=teamone,c=cn" -keystore keystore.jks -storepass 123456 -validity 3650
